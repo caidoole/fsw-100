@@ -1,0 +1,25 @@
+.headlines { 
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.headlines h2 { color: darkgreen;}
+
+
+img {
+    float: left;
+    margin-right:20px;
+
+  }
+
+  p { line-height: 25px;
+   
+}
+
+#id { text-transform: uppercase; }
+
+
+a:link { text-decoration: none;
+}
+
+a:hover {text-decoration: underline;}
+
