@@ -2,7 +2,7 @@
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
-.headlines h2 { color: darkgreen;}
+.headlines > h2 { color: darkgreen;}
 
 
 img {
