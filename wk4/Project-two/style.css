@@ -1,0 +1,91 @@
+body {
+    font-family: 'Petit Formal Script', 'Times New Roman', Times, serif;
+    background-image: url(https://image.freepik.com/free-photo/pink-marble-texture-background-abstract-marble-texture_34936-405.jpg ) ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    font-size: 20px ;
+}
+
+h1 { 
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+a { 
+    margin:3px;
+    text-decoration: underline;
+}
+
+.imageone{ 
+    max-height: 75%;
+    margin-left:28%;
+    
+}
+ 
+.imagetwo{
+     max-height: 75%;
+     margin-left: 28%;
+}
+
+p { 
+    margin: 15px;
+    padding:5px;
+}
+ 
+table, tr, td, th { 
+    border:solid black; 
+    padding:15px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;   
+}
+
+.logo { 
+    max-width:100%;
+    padding-left: 50%;
+}
+
+.logo img {
+    height:200px;
+    padding-top: 25px;
+}
+
+button { 
+    box-shadow: black;
+    border-radius: 10px;
+}
+.list { 
+    float:left
+}
+    
+    
+.info {
+     clear: both;
+ }
+
+footer { 
+    text-align: center;
+    margin: 5px;
+    border:5px;
+    padding:25px;
+}
+
+i.fab {
+    font-size: 35px;
+}
+
+.icons { 
+    position: absolute;
+    left:10%;
+    border-bottom-style: dashed;
+}
+

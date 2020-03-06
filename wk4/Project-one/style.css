@@ -1,0 +1,87 @@
+ a { 
+    margin: 3px; 
+}
+
+nav { 
+    position: fixed; 
+}
+
+h2 { 
+    text-align: center;
+    margin: auto ;
+    border: 50px ;
+    padding: 50px ;
+}
+
+.blogpost101 { 
+    text-align: center;
+    text-decoration: underline;
+}
+
+img { 
+    float: right;
+    max-width: 300px;
+    max-height: 300px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right:50px;
+
+}
+
+p { 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    text-indent: 20px;
+}
+
+footer{
+    text-align: center;
+    border: solid black;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+.pinkbox { 
+    height:100px;
+    width: 530px;
+    background-color:#F5C6D6 ;
+    margin: 5px;
+}
+
+.bloodynightmare { 
+    float: left;
+    height: 100px;
+    width: 125px ;
+    background-color:#EE2E84;
+    margin: 5px;
+}
+
+.skyisfalling { 
+    float: left;
+    height:100px;
+    width: 260px;
+    background-color:#85CFD8 ;
+    margin: 5px;
+}
+
+.mossonrollingrocks { 
+    float: left;
+    height: 100px;
+    width: 400px;
+    background-color:#8DC63F ; 
+    margin: 6px;
+}
+
+.staringatthesun{
+    float: left;
+    height: 100px;
+    width: 120px;
+    background-color: #E76E34;
+    margin: 6px;
+}
+
+.square {
+     max-width: 550px;
+}
