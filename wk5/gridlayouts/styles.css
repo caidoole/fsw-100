@@ -2,8 +2,9 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-    height: 125px;
+    grid-gap: 12px;
+    height: 145px;
+    max-width:600px;
     
     
 }
@@ -38,5 +39,51 @@
     background-color: darksalmon;
     grid-row: 3/3;
     grid-column: 1/5;
+    border-radius: 5px;
+}
+
+
+.bumpy{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(35, 1fr);
+    gap:10px; 
+    height:220px; 
+}
+
+.timestwo{
+    background-color: aquamarine;
+    grid-column: 2/6;
+    grid-row: 1/12;
+    border-radius: 5px;
+}
+
+.sideline{
+
+    background-color: burlywood;
+    grid-column:2/4 ;
+    grid-row:12/35;
+    border-radius: 5px;
+
+}
+
+.floater{
+    background-color: cornflowerblue;
+    grid-column:4/6;
+    grid-row: 12/23 ;
+    border-radius: 5px;
+}
+
+.hunkabump{
+    background-color: darkorchid;
+    grid-column:4/5;
+    grid-row:23/35;
+    border-radius: 5px;
+}
+
+.hunkabump2{
+    background-color: darkorchid;
+    grid-column:5/6;
+    grid-row:23/35;
     border-radius: 5px;
 }
