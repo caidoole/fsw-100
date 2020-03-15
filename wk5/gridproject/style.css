@@ -1,0 +1,135 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 10px;
+    height: 375px;
+    max-width: 550px;  
+}
+
+.please-work { 
+    background-color:#F5C6D6 ;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    
+}
+
+
+.nightmare {
+   
+    background-color:#EE2E84 ;
+    grid-column: 1/2;
+}
+
+.nightmare2 {
+   
+    background-color:#EE2E84 ;
+    grid-column: 2/3;
+
+}.nightmare3 {
+   
+    background-color:#EE2E84 ;
+    grid-column: 3/4;
+
+}
+
+.nightmare4 {
+   
+    background-color:#EE2E84 ;
+
+    grid-column: 4/5;
+
+}
+
+.skylight {
+  
+    background-color:#85CFD8 ;
+    grid-row: 3/4; 
+    grid-column: 1/3;      
+}
+
+#skylight{
+    background-color: #85CFD8;
+    grid-row: 3/4;
+    grid-column: 3/5
+}
+
+.moss{
+
+    background-color:#8DC63F ;
+    grid-row: 4/5;
+    grid-column: 1/4
+}
+
+.burnt{
+    background-color:#E76E34 ;
+   grid-row: 4/5;
+   grid-column: 4/5;
+}
+
+
+@media only screen and (max-width:768px)  {
+
+.grid{
+    grid-template-rows: repeat( 9, 40px);
+    grid-gap:5px;
+    max-width: 100%;
+}
+
+.please-work { 
+    background-color:#F5C6D6 ;
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.nightmare {
+    background-color:#EE2E84 ;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.nightmare2 {
+    background-color:#EE2E84 ;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+.nightmare3 {
+    background-color:#EE2E84 ;
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+
+.nightmare4 {
+    background-color:#EE2E84 ;
+    grid-column: 1/5;
+    grid-row: 5/6;
+}
+
+.skylight {
+  
+    background-color:#85CFD8 ;
+    grid-column: 1/5;
+    grid-row: 6/7;
+}
+
+#skylight{
+    background-color: #85CFD8;
+    grid-column: 1/5;
+    grid-row: 7/8;
+}
+
+.moss{
+
+    background-color:#8DC63F ;
+    grid-column: 1/5;
+    grid-row: 8/9;
+}
+
+.burnt{
+    background-color:#E76E34 ;
+    grid-column: 1/5;
+    grid-row: 9/10;
+}
+
+}
