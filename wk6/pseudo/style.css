@@ -1,0 +1,115 @@
+.skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    height: 150px;
+    border: solid black;
+}
+
+#b1 {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aqua;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+
+#b1:hover {
+    background-color: lightcoral;
+    align-items: flex-start;
+    font-size: 24pt;
+    font-weight: bolder;
+}
+
+
+#b2 {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blueviolet;
+    transition-property: inherit;
+    transition-duration: 3ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1ms;
+}
+
+#b2:hover {
+    text-decoration: underline ghostwhite;
+    text-align: end;
+    text-transform: lowercase;
+}
+
+#b3 {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: crimson;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 15ms;
+}
+
+#b3:hover {
+    background-image: url("https://i.redd.it/fbdtwml1mas01.jpg");
+    border-radius: 50%;
+    border:solid black;
+}
+
+#b4 {
+    grid-column: 4/5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: darkgreen;
+    opacity: .5;
+    transition-duration: 5ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+}
+
+#b4:hover {
+    grid-row: 1/35;
+    opacity: 1;
+    font-size: 36pt;
+    text-align: center;
+}
+
+#b5 {
+    grid-column: 5/6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+#b5:hover {
+    display: inline;
+    color:lemonchiffon;
+    background-color:purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#b6 {
+    grid-column: 6/7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hotpink;
+}
+
+#b6:hover {
+    grid-row: 2/6;
+    height: 300px;
+    width: 150px;
+    border: solid orangered;
+    opacity: 0.5;
+    box-shadow: 5px 4px 10px black;
+}
