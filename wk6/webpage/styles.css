@@ -1,153 +1,209 @@
-body{
+body {
     font-family: "spartan";
     background-color: whitesmoke;
 }
-.container{
-    
+
+.container {
     display: grid;
     grid-template-areas:
-    "header"
-    "nav"
-    "main" 
-    "footer";
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color:whitesmoke;
-   
+    background-color: whitesmoke;
+    max-width: 640px;
 }
 
-
-header{
+header {
+    grid-area: header;
+    grid-row: 1/2;
+    grid-column: 1/-1;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:space-evenly ;
+    align-items: space-evenly;
     min-width: 350px;
 }
-h1{
-    margin:5px;
-    padding:15px;
+
+h1 {
+    margin: 5px;
+    padding: 15px;
     text-align: center;
 }
-h4{
-    margin:5px;
-    margin-bottom:10px ;
+
+h4 {
+    margin: 5px;
+    margin-bottom: 10px;
     padding: 5px;
     text-align: center;
 }
-nav a{
+
+nav {
+    grid-area: nav;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: flex;
+}
+
+nav a {
     position: sticky;
     text-align: center;
-    margin:3px;
-    padding:10px;   
+    margin: 3px;
+    padding: 10px;
     border: solid 1px black;
     border-radius: 10px;
     float: left;
 }
 
-nav a:link{
+nav a:link {
     color: black;
 }
-nav a:visited{
-    color:blue;
+
+nav a:visited {
+    color: blue;
 }
-nav a:hover{
+
+nav a:hover {
     text-decoration: underline blue;
     color: blue;
     transition-duration: 3ms;
     box-shadow: 5px 4px 10px black;
 }
 
-nav a:active{
-    color:green;
-    
+nav a:active {
+    color: green;
+
 }
 
-thead, td, tr{
-    border: solid black;
-    border-radius: 15px;
+main {
+    grid-area: main;
+    grid-row: 3/4;
+    grid-column: 2/4;
     text-align: center;
-    padding:25px;
-    width:250px;
+    max-width: 800px;
+
 }
-td:hover{
-    text-decoration:underline;
+
+p {
+    text-align: center;
 }
- 
-img{
+
+img {
+
     margin: 14px;
     border: 2px solid black;
-    padding:5px;
-    
+    padding: 5px;
 }
-img:hover{
+
+img:hover {
     box-shadow: 5px 4px 10px black;
 }
 
-i{
-    width:20px;
-    margin: 10px;
+table {
+    margin: 0px auto;
 }
-i:hover{
-    color:navy;
+
+thead,td,tr {
+    border: solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+    width: 250px;
+}
+
+td:hover {
     text-decoration: underline;
 }
-button{
-    text-decoration: underline;
-    
-}
-button:hover{
-    color:darkviolet;
-    box-shadow: 5px 4px 10px black;   
-}
-#table-text >p{
-    text-align: left ;
-}
-p{
+
+#table-text>p {
     text-align: center;
 }
-ul> li{
-    padding: 10px;
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-form{
+
+.list ul {
+    justify-content: left;
+
+
+}
+
+.list ul>li {
+    text-align: left;
+
+}
+
+button {
     text-decoration: underline;
-    margin:10px;
 }
 
-footer >p{
+button:hover {
+    color: darkviolet;
+    box-shadow: 5px 4px 10px black;
+}
+
+form {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+footer {
+    grid-area: footer;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+}
+
+footer>p {
     font-size: 10px;
 }
 
-@media only screen and (min-width:520px){
-    .container{
-        grid-template-areas:
-        "header header"
-        "nav nav"
-        "main main" 
-        "footer footer";
-        grid-gap: 10px;
-        background-color:whitesmoke;
-        }
+i {
+    width: 20px;
+    margin: 10px;
 }
 
-@media only screen and(min-width:1080px){
-    .container{
-        background-color: blue;
-        grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "main main main" 
-        "footer footer footer";
-        grid-gap: 10px;
-        max-width: 1366px;
-        }
+i:hover {
+    color: navy;
+    text-decoration: underline;
 }
 
+@media only screen and (min-width:520px) {
+    .container {
+        grid-template-areas:
+            "header header header header header"
+            "nav nav nav nav nav nav"
+            "main main main main main "
+            "footer footer footer footer footer";
+        grid-gap: 10px;
+        background-color: whitesmoke;
+        max-width: 1024px;
 
+    }
+}
 
+@media only screen and (min-width:1080px) {
+    .container {
+
+        grid-template-areas:
+            "header header header header header"
+            "nav nav nav nav nav"
+            "main main main main main main"
+            "footer footer footer footer footer footer";
+        grid-gap: 10px;
+        background-color: navy;
+        max-width: 1920px;
+        color: white;
+    }
+}

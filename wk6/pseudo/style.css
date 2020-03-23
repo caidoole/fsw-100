@@ -67,7 +67,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: darkgreen;
-    opacity: .5;
+    opacity: .3;
     transition-duration: 5ms;
     transition-timing-function: ease-in-out;
     transition-delay: 5ms;
@@ -98,7 +98,7 @@
 }
 
 #b6 {
-    grid-column: 6/7;
+    grid-column: 6/-1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
