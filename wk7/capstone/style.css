@@ -1,0 +1,212 @@
+body {
+    min-width: 340px;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-evenly;
+    align-content: center;
+    background-color: lavenderblush;
+    font-family: 'Gotu';
+    max-width: 750px;
+
+}
+
+header {
+    grid-area: "header";
+    grid-column: 1/-1;
+    text-align: center;
+    background-image: url(images/prettylights.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 150px;
+    color: lavenderblush;
+}
+
+nav {
+    grid-area: "nav";
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    border: thin solid black;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 4px;
+}
+
+a:hover {
+    box-shadow: 4px 5px 10px black;
+}
+
+main {
+    grid-area: "main";
+    grid-column: 1/-1
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+table {
+    margin: 0px auto;
+}
+
+thead,
+td,
+tr {
+    border: solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+    width: 250px;
+}
+
+#random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+img {
+    border: thin solid black;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#passion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.reviews {
+    color: orange;
+}
+
+
+.services>p {
+    text-decoration: underline;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+form input {
+    font-size: 16px;
+}
+
+form>button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+form>button:hover {
+    box-shadow: 4px 5px 10px black;
+}
+
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    font-size: 24px;
+    text-decoration: underline;
+    margin: 10px;
+
+}
+
+i:hover {
+    color: blue;
+}
+
+footer {
+    grid-area: "footer";
+    grid-column: 1/-1;
+    font-size: 12px;
+    text-align: center;
+    background-image: url(images/prettylights.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: lavenderblush;
+
+}
+
+@media only screen and (min-width:1000px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "main main main main"
+            "footer footer footer footer ";
+        background-color: papayawhip;
+        max-width: 1560px;
+    }
+
+    header {
+        height: 230px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 75px;
+    }
+}
